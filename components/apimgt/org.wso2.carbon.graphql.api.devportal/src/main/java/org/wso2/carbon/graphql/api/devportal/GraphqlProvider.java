@@ -31,19 +31,13 @@ public class GraphqlProvider {
     @Autowired
     TagDataFetcherImpl tagDataFetcher;
 
-
-
-
     private GraphQL graphQL;
-
-
 
     @Bean
     public GraphQL graphQL()
     {
         return graphQL;
     }
-
 
     @PostConstruct
     public void init() throws IOException
